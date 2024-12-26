@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:serbest_calisma/product/counter_hello_button.dart';
+import 'package:serbest_calisma/101/counter_hello_button.dart';
+import 'package:serbest_calisma/product/language/language_items.dart';
 
 class StatefullLearnState extends StatefulWidget {
   const StatefullLearnState({super.key});
@@ -27,7 +28,7 @@ class _StatefullLearnStateState extends State<StatefullLearnState> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          "Statefull Learn State",
+          ProjectsTexts.appBarTitle,
           style: TextStyle(color: Colors.yellow.shade900),
         ),
       ),
@@ -69,7 +70,6 @@ class _StatefullLearnStateState extends State<StatefullLearnState> {
   }
 
   Padding _IncButton() {
-    print("hello");
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: FloatingActionButton(
