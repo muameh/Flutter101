@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:serbest_calisma/101/counter_hello_button.dart';
-import 'package:serbest_calisma/product/language/language_items.dart';
+import 'package:serbest_calisma/product/projects_texts/ProjectsTexts.dart';
 
 class StatefullLearnState extends StatefulWidget {
   const StatefullLearnState({super.key});
