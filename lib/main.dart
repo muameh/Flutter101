@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:serbest_calisma/101/page_view_learn.dart';
+import 'package:serbest_calisma/101/text_field_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: PageViewLearn(),
-    );
+    return const MaterialApp(
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        home: TextFieldLearn());
   }
 }
