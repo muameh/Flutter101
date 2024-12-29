@@ -11,12 +11,12 @@ class _ColorStateLearnState extends State<ColorStateLearn> {
   String index = "0";
   Color backgroundColor = Colors.red;
 
-  void _updateIndex(currentIndex) {
+  void _updateIndexAndBackgroundColor(int currentIndex) {
     setState(() {
       index = currentIndex.toString();
-      if (currentIndex == 0) {
+      if (currentIndex == _ScreenBackgroundColors.red.index) {
         backgroundColor = Colors.red;
-      } else if (currentIndex == 1) {
+      } else if (currentIndex == _ScreenBackgroundColors.green.index) {
         backgroundColor = Colors.green;
       } else {
         backgroundColor = Colors.yellow;
@@ -33,15 +33,16 @@ class _ColorStateLearnState extends State<ColorStateLearn> {
         backgroundColor: backgroundColor,
       ),
       body: Center(child: Text(index)),
-      bottomNavigationBar:
-          BottomNavigationBar(onTap: _updateIndex, items: const [
-        BottomNavigationBarItem(
-            icon: _ColorContainer(color: Colors.red), label: "Red"),
-        BottomNavigationBarItem(
-            icon: _ColorContainer(color: Colors.green), label: "Green"),
-        BottomNavigationBarItem(
-            icon: _ColorContainer(color: Colors.yellow), label: "Yellow"),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          onTap: _updateIndexAndBackgroundColor,
+          items: const [
+            BottomNavigationBarItem(
+                icon: _ColorContainer(color: Colors.red), label: "Red"),
+            BottomNavigationBarItem(
+                icon: _ColorContainer(color: Colors.green), label: "Green"),
+            BottomNavigationBarItem(
+                icon: _ColorContainer(color: Colors.yellow), label: "Yellow"),
+          ]),
     );
   }
 }
@@ -61,3 +62,5 @@ class _ColorContainer extends StatelessWidget {
     );
   }
 }
+
+enum _ScreenBackgroundColors { red, green, yellow }
