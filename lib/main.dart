@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:serbest_calisma/101/selected_color.dart';
 import 'package:serbest_calisma/101/text_field_learn.dart';
 
 void main() {
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: TextFieldLearn());
+        home: ColorStateLearn());
   }
 }
