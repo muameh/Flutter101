@@ -45,6 +45,7 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
                 padding: const EdgeInsets.symmetric(horizontal: 64.0),
                 child: TextField(
                   onChanged: (value) => _userName = value,
+                  keyboardType: TextInputType.name,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: "Kullanıcı Adı",
@@ -58,6 +59,7 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 64.0, vertical: 12),
                 child: TextField(
+                  obscureText: true,
                   onChanged: (value) => _password = value,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
