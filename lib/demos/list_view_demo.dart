@@ -38,15 +38,14 @@ class _MyCollectionsDemosStateState extends State<MyCollectionsDemosState> {
 }
 
 class _CategoryCard extends StatelessWidget {
-  const _CategoryCard({super.key, required CollectionModel model})
-      : _model = model;
+  const _CategoryCard({required CollectionModel model}) : _model = model;
 
   final CollectionModel _model;
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       child: SizedBox(
         width: double.infinity,
         height: 250,

@@ -21,7 +21,8 @@ class _ListViewBuilderLearnState extends State<ListViewBuilderLearn> {
       body: Container(
         child: ListView.builder(itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 48.0, vertical: 8.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 48.0, vertical: 8.0),
             child: _ListTile(index: index),
           );
         }),
@@ -31,7 +32,7 @@ class _ListViewBuilderLearnState extends State<ListViewBuilderLearn> {
 }
 
 class _ListTile extends StatelessWidget {
-  const _ListTile({super.key, required this.index});
+  const _ListTile({required this.index});
 
   final int index;
   Color get _randomColor => Colors.primaries[index % Colors.primaries.length];
