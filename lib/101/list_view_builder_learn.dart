@@ -39,6 +39,7 @@ class _ListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      selectedTileColor: Colors.white,
       tileColor: _randomColor,
       onTap: () {},
       shape: RoundedRectangleBorder(
