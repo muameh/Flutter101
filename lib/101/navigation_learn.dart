@@ -21,7 +21,6 @@ class _NavigationLearnState extends State<NavigationLearn>
         child: ListView.builder(
           itemBuilder: (context, index) {
             final color = buttonColors[index] ?? Colors.blue;
-
             return Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 16.0, horizontal: 24),
@@ -42,7 +41,7 @@ class _NavigationLearnState extends State<NavigationLearn>
                 style: ElevatedButton.styleFrom(
                   backgroundColor: color, // Rengi ata
                 ),
-                child: Text("${index}"),
+                child: Text("$index"),
               ),
             );
           },
